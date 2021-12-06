@@ -1,0 +1,619 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body
+{
+    /* background-color: #d6b5728a; */
+    background-color: #bea0646b;
+
+}
+.urls
+{
+    display: grid;
+    grid-template-rows: calc(100%/3) calc(100%/3) calc(100%/3);
+}
+.first_row, .sec_row, .thr_row
+{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-evenly;
+}
+
+
+.first_text
+{
+    position: absolute;
+    display: block;
+    width: 100%;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif, arial;
+    z-index: 1;
+    top:40%;
+}
+.slogan
+{
+    text-align: center;
+    z-index: 1;
+    font-size: 4rem;
+    opacity: 0;
+    margin-left: 3%;
+    margin-right: 3%;
+    
+}
+@keyframes anim_slogan_op1
+{
+    from
+    {
+        opacity: 0;
+    }
+    to 
+    {
+        opacity: 1;
+    }
+}
+@keyframes anim_slogan_op0
+{
+    from
+    {
+        opacity: 1;
+    }
+    to 
+    {
+        opacity: 0;
+    }
+}
+.scrollup 
+{
+    position: fixed; /* фиксированная позиция */
+    color: gold; /* цвет текста */
+    background-color: #eea7009f; /* цвет заднего фона */
+    right: 20px; /* расстояние от правого края */
+    bottom: 0px; /* расстояние от нижнего края */
+    padding: 4px 10px; /* отступы до содержимого блока */
+    font-size: 20px; /* размер шрифта (иконки) */
+    border-top-left-radius: 4px; /* скругление верхнего левого угла */
+    border-top-right-radius: 4px; /* скругление верхнего правого угла */
+    cursor: pointer; /* форма курсора */
+    display: block; /* не отображать элемент */
+    text-align: center; /*выравнивание содержимого элемента по центру */
+    z-index: 9; 
+    opacity: 1;   
+}
+.scrollup:hover
+{
+    background-color: #000; /* цвет заднего фона при наведении */
+}
+.scrollup i
+{
+    color: black;
+}
+.scrollup:hover i
+{
+    color: gold;
+}
+.hide
+{
+    opacity: 0;
+    transition: opacity 1s;
+
+}
+.anim_slogan_op1
+{
+    animation: anim_slogan_op1 3s linear forwards;
+}
+.anim_slogan_op0
+{
+    animation: anim_slogan_op0 3s linear forwards;
+}
+*
+{
+    -moz-user-select: none;
+    -o-user-select:none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.content
+{
+    margin: 0%;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border:3px solid black;
+    box-shadow:inset 0px 0px 0px 0px #d6b5728a;
+    backdrop-filter: blur(4px) opacity(0);
+    -webkit-backdrop-filter: blur(4px) opacity(0);
+    transition: backdrop-filter 1s,box-shadow 1s;
+}
+.content:hover
+{
+    backdrop-filter: blur(4px) opacity(1);
+    box-shadow:inset 0px 0px 0px 20px #d6b5728a;
+    -webkit-backdrop-filter: blur(4px) opacity(1);
+}
+
+.images
+{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.main_text
+{
+    margin-top: 3%;
+    margin-left:7%;
+    margin-right: 15%;
+}
+
+img
+{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+nav 
+{
+    position:fixed;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    background-color: rgba(244, 165, 96, 1);
+    width: 100%;
+    z-index: 3;
+    height: 50px; 
+    opacity: 1;
+}
+nav a
+{
+    text-align: center;
+    color: white;
+    line-height: 45px;
+    width: 25%;
+}
+*
+{
+    font-family: 'Roboto';
+
+}
+nav a:hover 
+{
+    background-color: rgb(184, 117, 58);
+}
+
+div article:not(.first_text)
+{
+    display: block;
+    margin-top: 8%;
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+    /* border: 1px solid black; */
+}
+.cont2
+{
+    background-image: url(images/pop1.jpg);
+}
+.cont4
+{
+    background-image: url(images/pop2.jpg);
+}
+.cont5
+{
+    background-image: url(images/mnt.jpg);
+}
+.cont6
+{
+    background-image: url(images/bch.jpg);
+}
+.cont7
+{
+    background-image: url(images/low.jpg);
+}
+.cont8
+{
+    background-image: url(images/mlvl.jpg);
+}
+.cont9
+{
+    background-image: url(images/hlvl.jpg);
+}
+.thr_row
+{
+    margin-bottom: 3%;
+}
+
+a
+{
+    text-decoration: none;
+}
+.about
+{
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.hot_text
+{
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-size: x-large;
+    top:0%;
+    transform: scale(0.3);
+    opacity: 0;
+    transition: transform 2s, top 2s, opacity 2s;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+div article:not(.first_text):hover .hot_text
+{
+    animation: text_anim 1s forwards;
+    top:40%;
+    opacity: 1;
+    transform: scale(1);
+}
+i
+{
+    color:gold;
+}
+
+@media only screen and (max-width: 2100px)
+{
+    div article:not(.first_text)
+    {
+        height: 350px; 
+    }
+    nav a
+    {
+        line-height: 70px;
+        font-size: 35px;
+    }
+    nav 
+    {
+        height: 80px;
+    }
+    .about
+    {
+        font-size: 40px;
+    }
+    div.scrollup
+    {
+        font-size: 80px;
+    }
+    
+}
+@media only screen and (max-width: 1900px)
+{
+    nav a
+    {
+        line-height: 70px;
+        font-size: 35px;
+    }
+    nav 
+    {
+        height: 80px;
+    }
+    div article:not(.first_text)
+    {
+        height: 320px; 
+    }
+    .about
+    {
+        font-size: 40px;
+    }
+    div.scrollup
+    {
+        font-size: 60px;
+    }
+    
+    
+@media only screen and (max-width: 1600px)
+{
+    div article:not(.first_text)
+    {
+        height: 290px; 
+    }
+    nav a
+    {
+        line-height: 70px;
+        font-size: 35px;
+    }
+    nav 
+    {
+        height: 80px;
+    }
+    .slogan
+    {
+        font-size: 65px;
+    }
+    .hot_text
+    {
+        font-size: 40px;
+    }
+    .about
+    {
+        font-size: 33px;
+    }
+    div.scrollup
+    {
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 1300px)
+{
+    div article:not(.first_text)
+    {
+        height: 230px; 
+    }
+    nav a
+    {
+        line-height: 50px;
+        font-size: x-large;
+    }
+    nav 
+    {
+        height: 55px;
+    }
+    .slogan
+    {
+        font-size: 45px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .hot_text
+    {
+        font-size: 26px;
+    }
+    .about
+    {
+        font-size: 25px;
+    }
+    div.scrollup
+    {
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width: 1100px)
+{
+    .content:hover, .content.hover
+    {
+        backdrop-filter: blur(4px) opacity(1);
+        box-shadow:inset 0px 0px 0px 20px #d6b5728a;
+        -webkit-backdrop-filter: blur(4px) opacity(1);
+    }
+    .first_row, .sec_row, .thr_row
+    {
+        display: grid;
+        grid-template-columns: 80%;
+    }
+    div article:not(.first_text)
+    {
+        height: 390px;
+    }
+    div article:not(.first_text):hover .hot_tex
+    {
+        top:40%;
+    }
+    .hot_text.hover
+    {
+        top: 40%;
+        animation: text_anim 1s forwards;
+        opacity: 1;
+        transform: scale(1);
+    }
+    .about
+    {
+        font-size: 22px;
+    }
+    .hot_text
+    {
+        font-size: 35px;
+    }
+    div.scrollup
+    {
+        font-size: 45px;
+    }
+    
+}
+@media only screen and (max-width: 800px)
+{
+    .first_row, .sec_row, .thr_row
+    {
+        display: grid;
+        grid-template-columns: 80%;
+    }
+    div article:not(.first_text)
+    {
+        height: 330px;
+    }
+    .about
+    {
+        font-size: 20px;
+    }
+    .main_text
+    {
+        margin-left: 5%;
+        margin-right: 7%;
+    }
+    nav
+    {
+        height: 33px;
+    }
+    nav a
+    {
+        font-size: 17px;
+        line-height: 28px;
+    }
+    div.scrollup
+    {
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 650px)
+{
+    .first_row, .sec_row, .thr_row
+    {
+        display: grid;
+        grid-template-columns: 80%;
+    }
+    div article:not(.first_text)
+    {
+        height: 260px;
+    }
+    .slogan
+    {
+        font-size: 27px;
+        top:50%;
+    }
+    .hot_text
+    {
+        font-size: 32px;
+    }
+    .about
+    {
+        font-size: 15px;
+    }
+    div.scrollup
+    {
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 550px)
+{
+    .first_row, .sec_row, .thr_row
+    {
+        display: grid;
+        grid-template-columns: 80%;
+    }
+    div article:not(.first_text)
+    {
+        height: 230px;
+    }
+    .slogan
+    {
+        font-size: 25px;
+        top:50%;
+    }
+    .content:hover
+    {
+        box-shadow:inset 0px 0px 0px 13px #d6b5728a;
+    }
+    .about
+    {
+        font-size: 13px;
+    }
+    nav
+    {
+        height: 25px;
+    }
+    nav a
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    div.scrollup
+    {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 450px)
+{
+    .first_row, .sec_row, .thr_row
+    {
+        display: grid;
+        grid-template-columns: 80%;
+    }
+    div article:not(.first_text)
+    {
+        height: 200px;
+    }
+    .slogan
+    {
+        font-size: large;
+        top:50%;
+    }
+    nav
+    {
+        height: 25px;
+    }
+    nav a
+    {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .hot_text
+    {
+        top:35%;
+        font-size:20px ;
+
+    }
+    .content:hover
+    {
+        box-shadow:inset 0px 0px 0px 10px #d6b5728a;
+    }
+    .about
+    {
+        font-size: 12px;
+    }
+    .main_text
+    {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    div.scrollup
+    {
+        font-size: 30px;
+    }
+
+}
+@media only screen and (max-width: 350px)
+{
+    nav
+    {
+        height: 20px;
+    }
+    nav a
+    {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .first_row, .sec_row, .thr_row
+    {
+        display: grid;
+        grid-template-columns: 80%;
+    }
+    div article:not(.first_text)
+    {
+        height: 150px;
+    }
+    .slogan
+    {
+        font-size: small;
+        top:50%;
+    }
+    .hot_text
+    {
+        font-size: 15px;
+    }
+    .about
+    {
+        font-size: 8px;
+    }
+    div.scrollup
+    {
+        font-size: 25px;
+    }
+}

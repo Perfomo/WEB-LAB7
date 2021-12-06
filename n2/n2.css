@@ -1,0 +1,906 @@
+
+*
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+header
+{
+    grid-template-columns: 0% 100%;
+}
+.else
+{
+    /* position: fixed; */
+    position: relative;
+    top:0%;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% 60%;
+    z-index: 5;
+}
+.logo
+{
+    margin-left: 10%;
+    display: block;
+    height:80px;
+}
+.logo a img
+{
+    height: 100%;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: black;
+    margin-left: 4%;
+    line-height: 80px;
+}
+nav a:first-child
+{
+    color:red;
+    margin-left: 12%;
+}
+nav
+{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.more
+{
+    display: block;
+    position: relative;
+    color: white;
+    height: 70px;
+    width: 140px;
+    border: none;
+    background-color: red;
+    margin-top: 5%;
+    z-index: 10;
+}
+.games_text button
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 2%;
+}
+.button_look_text_1
+{
+    position: relative;
+    display: block;
+    text-align: justify;
+    font-size: 12px;
+}
+.icon_1
+{
+    margin-left: 45%;
+    font-size: x-large;
+}
+
+nav button
+{
+    color: white;
+    border: none;
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    text-align: center;
+    line-height:  30px;
+    position: relative;
+    display: block;
+    margin-right: 0%;
+    margin-left: auto;
+}
+.logo:hover
+{
+    opacity: 0.75;
+}
+.about
+{   
+    height: 600px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    overflow: hidden;
+}
+body
+{
+    background-color:  whitesmoke;
+}
+.about_text
+{
+    position: relative;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    /* padding: 2%; */
+}
+.about_text 
+{
+    position: relative;
+    height: 100%;
+}
+.games_text h2
+{
+    font-size: 50px;
+    margin-bottom: 2%;
+}
+.games_text
+{
+    padding-right: 10%;
+}
+.games_text *
+{
+    top: 30%;
+    position: relative;
+}
+.text_left h2
+{
+    font-size: 50px;
+    margin-bottom: 2%;
+}
+.text_left p, .text_left button:not(nav button)
+{
+    margin-top: 3%;
+}
+.Character
+{
+    display: block;
+    position: relative;
+    width: 100%;
+    top:-20%;
+}
+.shadow
+{
+    background-color: green;
+}
+.boy
+{
+    position: relative;
+    display: block;
+    justify-content: center;
+    background-color: rgba(221, 160, 221, 0.712);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+:root
+{
+    --pixel-size: 18;
+}
+ 
+ .Character {
+    width: calc(32px * var(--pixel-size));
+    height: calc(32px * var(--pixel-size));
+    overflow: hidden;
+    position: relative;
+    margin: 4em auto;
+ }
+ 
+ .Character_spritesheet {
+    animation: moveSpritesheet 1s steps(4) infinite;
+    width: calc(128px * var(--pixel-size));
+    position: absolute;
+    
+ }
+ .Character_shadow {
+    position: absolute;
+    width: calc(32px * var(--pixel-size));
+    height: calc(32px * var(--pixel-size));
+ }
+ 
+ .pixelart {
+    image-rendering: pixelated;
+ }
+ 
+ .face-right {
+    top: calc(-32px * var(--pixel-size));
+ }
+ .face-up {
+    top: calc(-64px * var(--pixel-size));
+ }
+ .face-left {
+    top: calc(-96px * var(--pixel-size));
+ }
+ 
+ 
+ @keyframes moveSpritesheet {
+    from {
+       transform: translate3d(0px,0,0)
+    }
+    to {
+       transform: translate3d(-100%,0,0)
+    }
+ }
+article
+ {
+    height: 400px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    width: 85%;
+    position: relative;
+    justify-content: center;
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: 5%;
+ }
+article div 
+{
+    margin-left: 3%;
+}
+.ar_2 div
+{
+    margin-right: 3%;
+    margin-left: 0%;
+}
+.ar_2
+{
+    grid-template-columns: 55% 45%;
+}
+ .images
+ {
+    width:80%;
+    justify-content: center;
+    display: block;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+ }
+ .img_right 
+ {
+    display: block;
+    background-image: url("images/2.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+ }
+.text_left
+ {
+    top:20%;
+    position: relative;
+    display: block;
+    height: 100%;
+ }  
+.text_left button
+{
+    display: grid;
+    grid-template-rows: 50% 30%;
+}
+.icon_2
+{
+    position: relative;
+    
+    /* justify-content: center; */
+    text-align: center;
+    bottom: 3%;
+}
+.button_look_text_2
+{   
+    position: relative;
+    text-align: center;  
+    top:60%;
+    bottom: 0%; 
+}
+.icon_2 i
+{
+
+    font-size: x-large;
+}
+.img3 
+{
+    background-image: url("images/4.png");
+}
+.img4 
+{
+    background-image: url("images/3.png");
+}
+.img5
+{
+    background-image: url("images/1.png");
+}
+.more_2
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    height: 140px;
+    margin-left: 9%;
+    margin-bottom: 5%;
+
+}
+.button_look_text_3
+{
+    top: 40%;
+    position: relative;
+    display:block;
+    text-align: justify;
+    margin-left: 15%;
+}
+.icon_3
+{
+    position: relative;
+    top:41%;
+    font-size: x-large;
+}
+.slider 
+{
+    overflow: hidden;
+    height: 800px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 20% 70% 10%;
+    width: 100%;
+    position: relative;
+    padding-left: 9%;
+    padding-right: 9%;
+    z-index: 9;
+
+}
+.slider_about
+{
+    top:40%;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+.slider_about_text
+{
+    margin-left: 1.5%;
+}
+.slider_buttons
+{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: auto;
+    justify-content: right;
+    margin-right: 1.5%;
+
+}
+.more_3
+{
+    margin-top: 0%;
+    height: 50px;
+    width: 50px;
+    font-size: x-large;
+}
+.left
+{
+    right: 50%;
+}
+.parts
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
+    width: 100%;
+    /* overflow: hidden; */
+}
+.contain
+{
+    position: relative;
+    display: table-column;
+    height: 100%;
+}
+.contain img 
+{
+    width: 100%;
+}
+.contain p, .contain h2
+{
+    top:0%;
+    margin-bottom: 0%;
+    margin-top: 5%;
+}
+.contain button .button_look_text_2
+{
+    position: relative;
+    top:5%;
+}
+.contain button .icon_2
+{
+    position: relative;
+    top:0%;
+}
+.left
+{
+    background-color: lightgray;
+    color:gray;
+}
+.more:not(.left):hover
+{
+    background-color: rgb(255, 81, 0);
+}
+.more:not(.left):active
+{
+    background-color: rgb(170, 15, 15);
+}
+.scroll_up
+{
+    display: block;
+    position: relative;
+   
+
+}
+.field_about
+{
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: white;
+    top: 10%;
+}
+.sqr
+{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    position: relative;
+    display: block;
+    text-align: center;
+    left: 100%;
+}
+.scroll_about 
+{
+    top: 20%;
+    position: relative;
+}
+.icon_4
+{
+    position: relative;
+    top:20%;
+}
+footer
+{
+    position: relative;
+    margin-top: 0.5%;
+    height: 30px;
+    display: grid;
+    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+    color: gray;
+    z-index: 11;
+}
+.foot_left
+{
+    display: block;
+    position: relative;
+    margin-left: 3%;
+    line-height: 25px;
+
+}
+.foot_center a
+{
+    position: relative;
+    text-decoration: none;
+    color: gray;
+}
+.foot_center a:not(:first-child)
+{
+    margin-left: 3%;
+}
+.foot_center
+{
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    text-align: center;
+    line-height: 25px;
+    justify-content: space-between;
+
+}
+.foot_right
+{
+    text-align: right;
+    margin-right: 3%;
+    line-height: 25px;
+}
+.foot_right a
+{
+    text-decoration: none;
+    color: gray;
+    margin-left: 2%;
+}
+.aside_menu
+{
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    position: fixed;
+    top: 40%;
+    z-index: 10;
+    color: gray;
+    left: 2.5%;
+}
+.aside_menu a
+{
+    margin-bottom: 80%;
+    color: gray;
+}
+.pop
+{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 1000px;
+    z-index: 999;
+    top:0%;
+}
+.back
+{
+    position: relative;
+    display: block;
+    background-color: black;
+    opacity: 0.7;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: max-content;
+}
+.hamburger-menu
+{
+    width: 100%;
+    display: none;
+    position: relative;
+    background-color: whitesmoke;
+}
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+  }
+  .menu__btn {
+    display: flex;
+    align-items: center;  
+    position: fixed;
+    top: 1%;
+    left: 1.75%;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  /* контейнер меню */
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+.box
+{
+    position: fixed;
+    display: block;
+    top:30%;
+    height: 500px;
+    width: 1000px;
+}
+@media screen and (min-width: 1400px)
+{
+    article
+    {
+        height: 600px;
+    }
+    .about
+    {
+        height: 700px;
+    }
+    .slider
+    {
+        height: 1000px;
+        
+    }
+    .text_left h2
+    {
+        font-size: 50px;
+        margin-bottom: 4%;
+    }
+    .text_left p, .text_left button:not(nav button)
+    {
+        margin-top: 6%;
+    }
+}
+
+@media screen and (max-width: 1150px)
+{
+    .logo
+    {
+        display: block;
+        position: relative;
+    }
+    article
+    {
+        height:350px;
+    }
+    header
+    {   
+        display: grid;
+        grid-template-columns: 6% 94%;
+        height: 80px;
+    }
+    .about
+    {
+        position: relative;
+        left:6%;
+        width: 94%;
+        height: 700px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .about_text
+    {
+        background-color: rgba(221, 160, 221, 0.712);
+    }
+    .Character
+    {
+        position: relative;
+        top: -120%;
+        right: 20%;
+    }
+    .boy 
+    {
+        height: 300px;
+        position: relative;
+        top:0%;
+    }
+    .games_text .more
+    {
+        position: relative;
+        left: 70%;
+        top:80%;
+    }
+    .games_text
+    {
+        position: relative;
+        top: -17%;
+        left: -10%;
+        z-index: 9;
+    }
+    .slider
+    {
+        height: 650px;
+    }
+    nav a
+    {
+        display: none;
+    }
+    .text_left
+    {
+        top:7%;
+    }
+    .hamburger-menu
+    {
+        display: block;
+    }
+    .else
+    {
+        background-color:rgba(221, 160, 221, 0.712) ;
+    }
+}
+
+@media screen and (max-width: 830px)
+{
+    article, .ar_2
+    {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: none;
+        height: 700px;
+        justify-content: center;
+    }
+    .field_about
+    {
+        display: none;
+    }
+    .aside_menu
+    {
+        display: none;
+    }
+   article div 
+   {
+       margin-left: 0%;
+   }
+    
+    .ar_2 div , .ar_1 div, .ar_2  .text_left,  .img_right
+    {
+        margin: 0%;
+    }
+    .images
+    {
+        margin: 0%;
+    }
+    .img_right, .text_left
+    {
+        left: 10%;
+    }
+    .text_left
+    {
+        margin-right: 10%;
+        left: 8%;
+        padding-right: 30%;
+    }
+    .ar_1 .text_left h2, .ar_1 .text_left p
+    {
+        position: relative;
+        top: -5%;
+    }
+    .ar_1 .more
+    {
+        top:100%;
+    }
+    .ar_1 .images
+    {
+        position: relative;
+        top: -30%;
+    }
+    .ar_2 .text_left h2, .ar_2 .text_left p
+    {
+        position: relative;
+        top: -110%;
+    }
+    .ar_2 .images
+    {
+        position: relative;
+        top: 70%;
+    }
+    .ar_2 
+    {
+        top: 10%;
+    }
+    .ar_2 .more
+    {
+        top: -5%;
+    }
+    #ar_3 .text_left
+    {
+        position: relative;
+        top: 0%;
+    }
+    #ar_3 .images
+    {
+        position: relative;
+        top: -43%;
+    }
+    #ar_3 .more
+    {
+        position: relative;
+        top: 105%;
+    }
+    #ar_4 .text_left
+    {
+        position: relative;
+        top: 0%;
+    }
+    #ar_4 .images
+    {
+        position: relative;
+        top: 45%;
+    }
+    #ar_4  .more
+    {
+        position: relative;
+        top: 0%;
+    }
+    .parts
+    {
+        grid-template-columns: 45% 45%;
+    }
+    .cont_3
+    {
+        display: none;
+    }
+    footer
+    {
+        grid-template-columns: 50% 50%;
+    }
+    .foot_center
+    {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 586px)
+{
+    .about
+    {
+        overflow: visible;
+        height: 850px;
+    }
+    .about .more
+    {
+        position: relative;
+        top: 70%;
+        left: 25%;
+    }
+    .Character
+    {
+        top: -80%;
+    }
+    
+    .parts
+    {
+        grid-template-columns: 70%;
+    }
+    .cont_2
+    {
+        display: none;
+    }
+    .games_text
+    {
+        z-index: 1000;
+        position: relative;
+        left: -30%;
+    }
+    :root
+    {
+        --pixel-size: 9;
+    }
+    header
+    {
+        grid-template-columns: 10%;
+    }
+}
+
